@@ -4,7 +4,7 @@ This post will show how you can create an environment in Python within Visual St
 
 ## Place to start
 
-Start by installing Python for your operating system, located (here)[https://python.org/download].
+Start by installing Python for your operating system, located [here](https://python.org/download).
 
 Then what you want to do is to create a virtual environment (like npm but is confusing) utilizing the command:
 
