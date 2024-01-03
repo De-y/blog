@@ -23,7 +23,7 @@ Once that is installed, you will need a couple more extensions (depending on you
 You will need to search for Crates in the extension marketplace and choose the "crates" extension, as so.
 ![image](https://github.com/De-y/blog/assets/61808223/2829fc85-70cb-4f73-a047-7ddb5faf6403)
 
-After that, you will need to search up for the rust-analyzer package on the extensions marketplace, and install it.
+Finally, you will need to search up for the rust-analyzer package on the extensions marketplace, and install it.
 ![image](https://github.com/De-y/blog/assets/61808223/3c159c01-ec43-4f0c-ac61-80b8a5d78654)
 
 After that, you should be good!
