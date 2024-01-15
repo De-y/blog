@@ -28,7 +28,7 @@ Basically, what is happening is the following diagram:
 
 ![image](https://github.com/De-y/blog/assets/61808223/d40a529b-0698-445e-b1ab-84a8b82122b6)
 
-First, the client sends the request through LSP, and then after the language server receives it and processes it using parsing (basically a way for the server to "read" and understand the code) and further code and through linting (the primary way to identify errors, bugs, and stylistic issues) to iron out and to see if there are any errors; if there aren't, the server sends its decision back and then waits until a new request is made. However, if an error or issue is found, the server will return its decision and then instruct the client to highlight the line of code where there is an error.
+First, the client sends the request through LSP, and then after the language server receives it and processes it using parsing (basically a way for the server to "read" and understand the code) and further code and through linting (the primary way to identify errors, bugs, and stylistic issues) to iron out and to see if there are any errors; if there aren't, the server sends its decision back and then waits until a new request is made. However, if an error or issue is found, the server will return its decision and instruct the client to highlight the line of code where there is an error.
 
 That way, the client and the server know that
 ``console.log("Hello")`` is valid, while
@@ -48,9 +48,15 @@ CTRL + SPACE gives you a context menu for auto-filling in a necessary function.
 
 A quick gif that shows you how to utilize this feature
 
-I first used CTRL + SPACE to get to the context menu, then went down using my down arrow (you can use a mouse), found what I wanted, and then press enter. Then, what happens is that there will be suggestions for autofill done automatically by the language server.
+I first used CTRL + SPACE to get to the context menu, then went down using my down arrow (you can use a mouse), found what I wanted, and then press enter. Then, I used console.log to print out the length value of BarProp.
 
-Then, I used console.log to print out the length value of BarProp.
+The thing that is happening, like whenever I am typing, is that one request is sent to the language server every time you type to find the necessary function you are trying to locate to be able to assist you. The client will attempt to use a variety of search algorithms that the client supports (like fuzzy finding, which is a way of searching that uses algorithms to find functions that match what you are trying to do; only some clients don't support this, like Visual Studio Code). However, if the server can't find anything regarding the thing you are trying to locate, it will give you no suggestions.
+
+![image](https://github.com/De-y/blog/assets/61808223/30089745-876f-4309-a9c8-cdc7856bc0fa)
+no suggestions
+
+![image](https://github.com/De-y/blog/assets/61808223/be3b98a3-2a1c-4111-977d-c3c54c702793)
+suggestions
 
 # What's next?
 
@@ -60,7 +66,7 @@ You can find the necessary language servers [here](https://langserver.org/). The
 
 ![image](https://github.com/De-y/blog/assets/61808223/d80c075b-d680-4de0-821a-4f10abd5e7c3)
 
-Language Server table with all the different servers and whether or not they meet a category, can be found at langserver.org.
+Language Server table with all the different servers and whether or not they meet a category can be found at langserver.org.
 
 
 After that, you should be good!
