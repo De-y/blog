@@ -24,6 +24,12 @@ This is an example of how LSP works with the client sending a request over to a 
 
 # Useful Keybinds
 CTRL + SPACE gives you a context menu for auto-filling in a necessary function.
-![2024-01-15 08-56-02](https://github.com/De-y/blog/assets/61808223/a419074f-7151-45b5-b0a6-2065e09f36ed)
-GIF showing what happens when you hold CTRL + SPACE.
+
+![2024-01-15-09-03-46](https://github.com/De-y/blog/assets/61808223/6ff3e3d6-7dc8-48bd-9d51-c5300a7a1987)
+
+A quick gif that shows you how to utilize this feature
+
+I first used CTRL + SPACE to get to the context menu, then went down using my down arrow (you can use a mouse), found what I wanted, and then press enter. Then, what happens is that there will be suggestions for autofill done automatically by the language server.
+
+Then, I used console.log to print out the length value of BarProp.
 
