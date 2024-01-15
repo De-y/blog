@@ -28,7 +28,7 @@ Basically, what is happening is the following diagram:
 
 ![image](https://github.com/De-y/blog/assets/61808223/d40a529b-0698-445e-b1ab-84a8b82122b6)
 
-First, the client sends the request through LSP, and then after the language server receives it and processes it using parsing and further code and through linting to iron out and to see if there are any errors; if there aren't, the server sends its decision back and then waits until a new request is made. However, if an error or issue is found, the server will send back its decision and then instruct the client to highlight the line of code where there is an error.
+First, the client sends the request through LSP, and then after the language server receives it and processes it using parsing (basically a way for the server to "read" and understand the code) and further code and through linting (the primary way to identify errors, bugs, and stylistic issues) to iron out and to see if there are any errors; if there aren't, the server sends its decision back and then waits until a new request is made. However, if an error or issue is found, the server will return its decision and then instruct the client to highlight the line of code where there is an error.
 
 That way, the client and the server know that
 ``console.log("Hello")`` is valid, while
