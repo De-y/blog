@@ -37,6 +37,6 @@ Then, I used console.log to print out the length value of BarProp.
 
 To start using the LSP, you will need an IDE and a Language Server for the language you will program in.
 
-You can find the necessary language servers ![here](https://langserver.org/). Then you will need to install that necessary language server and set it up inside your IDE (should do it automatically)
+You can find the necessary language servers [here](https://langserver.org/). Then you will need to install that necessary language server and set it up inside your IDE (should do it automatically)
 
 After that, you should be good!
