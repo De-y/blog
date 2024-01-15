@@ -39,4 +39,9 @@ To start using the LSP, you will need an IDE and a Language Server for the langu
 
 You can find the necessary language servers [here](https://langserver.org/). Then you will need to install that necessary language server and set it up inside your IDE (should do it automatically)
 
+![image](https://github.com/De-y/blog/assets/61808223/d80c075b-d680-4de0-821a-4f10abd5e7c3)
+
+Language Server table with all the different servers and whether or not they meet a category, can be found at langserver.org.
+
+
 After that, you should be good!
